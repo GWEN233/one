@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head> @include('./header.html', { "title": "登录页" })</head>
+
+<body>
+    <div class="wraper">
+        <div class="wraplogin">
+            <div class="header">
+                <div class="logo" id="logo">
+                </div>
+            </div>
+            <div class="mainbox"></div>
+            <!-- <div class="main"></div> -->
+            <div class="main">
+                <div class="l_m_cont">
+                    <div class="left-img">
+                        <div id="myImg">
+                        </div>
+                    </div>
+                    <div class="user_login">
+                        <div class="tel">
+                            <h2>用户登录</h2>
+                        </div>
+                        <div class="u_l_cont">
+                            <div class="u_l_block">
+                                <span class="icon_text">
+                                    <i class="name"></i>
+                                </span>
+                                <input type="text" name="" placeholder="请输入用户名">
+                            </div>
+                            <div class="u_l_block mar_tb20">
+                                <span class="icon_text">
+                                    <i class="password"></i>
+                                </span>
+                                <input type="password" name="" value="12345678">
+                            </div>
+                            <div id='drag'></div>
+                            <div class="u_l_block col_b">
+                                <button>登录</button>
+                            </div>
+                            <div class="u_l_block2 fn-clear">
+                                <i></i><span>忘记密码？</span><a href="" title="">点击这里</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <ul id="slider_imgs" class="lognw-slider-imgs">
+                </ul>
+                <ul id="slider_point" class="lognw-slider-point fn-clear">
+                    <li class="current"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <p class="padd-t">版权所有(C)平凉市卫生健康委员会 平凉市某某区卫生大楼 邮编：735000</p>
+                <p>技术支持：中电万维信息技术有限责任公司 电话：0931-8558792 8509361</p>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="dist/js/lib/backstretch/jquery.backstretch.min.js"></script>
+    <script src="dist/js/lib/slidebar/slidebar.js"  charset="utf-8"></script>
+    <script>
+    
+    $(function() {
+        $('#drag').drag();
+        $(window).resize(function(){
+            var dataList = ["0","1"];
+            var options = {
+                dataList: dataList,
+                success:function(){  
+                    console.log("show");  
+                },
+                fail: function(){
+                    console.log("fail");  
+                }
+            };
+            var mywidth1 = ($(window).height()*0.75)
+            var mywidth2 = ($(window).height()*0.125)
+            $('.mainbox').css({
+                height: mywidth1,
+            });
+            $('.main').css({
+                height: mywidth1,
+            });
+            $('.header').css({
+                height: mywidth2,
+            });
+            $('.footer').css({
+                height: mywidth2,
+            });
+        });
+    	$(function() {
+            var mywidth1 = ($(window).height()*0.75)
+            var mywidth2 = ($(window).height()*0.125)
+            $('.mainbox').css({
+                height: mywidth1,
+            });
+            $('.main').css({
+                height: mywidth1,
+            });
+            $('.header').css({
+                height: mywidth2,
+            });
+            $('.footer').css({
+                height: mywidth2,
+            });
+            $('.lognw-slider-imgs').backstretch([
+                "dist/img/loginBg1.png",
+                "dist/img/loginBg2.png",
+                "dist/img/loginBg3.png"
+            ], {
+                duration: 3000
+            });
+        });
+        $(window).on("backstretch.after", function(e, instance, index) {
+            // console.log(index);
+            $(".lognw-slider-point li.current").removeClass('current');
+            $(".lognw-slider-point li:eq(" + index + ")").addClass('current');
+            var Index = $(".lognw-slider-point li.current").index();
+            var Indexes = Index + 1;
+            if (Index == 0) {
+                $('#myImg').addClass("myges1").removeClass("myges2").removeClass("myges3");
+            } else if (Index == 1) {
+                $('#myImg').addClass("myges2").removeClass("myges1").removeClass("myges3");
+            } else {
+                $('#myImg').addClass("myges3").removeClass("myges2").removeClass("myges2");
+            }
+        });
+        $(document).on('click', '.lognw-slider-point li', function(event) {
+            var Index = $(".lognw-slider-point li.current").index();
+            $(this).addClass("current").siblings('li').removeClass("current");
+            var Index1 = $(this).index();
+            var dif = Index1 - Index;
+            // console.log(dif);
+            if (dif == 1) {
+                $("#slider_imgs").backstretch("next");
+            } else if (dif == -1) {
+                $("#slider_imgs").backstretch("prev");
+            } else if (dif == 2) {
+                $("#slider_imgs").backstretch("next");
+                $("#slider_imgs").backstretch("next");
+            } else if (dif == -2) {
+                $("#slider_imgs").backstretch("prev");
+                $("#slider_imgs").backstretch("prev");
+            }
+        });
+    })
+    </script>
+</body>
+
+</html>

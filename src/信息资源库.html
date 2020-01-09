@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head> @include('./header.html', { "title": "信息资源库" }) </head>
+<script type="text/javascript" src="dist/js/lib/viewport/viewport2.js"></script>
+
+<body>
+    <div class="XXZY-wraper">
+        <div class="head">
+            <ul class="hd-nav">
+                <li>
+                    <i class="home-icon"></i>
+                    <span>平台首页</span>
+                </li>
+                <li>
+                    <i class="introduce-icon"></i>
+                    <span>平台介绍</span>
+                </li>
+                <li>
+                    <i class="screen-icon"></i>
+                    <span>大屏演示</span>
+                </li>
+                <li>
+                    <i class="password-icon"></i>
+                    <span>修改密码</span>
+                </li>
+                <li>
+                    <i class="exit-icon"></i>
+                    <span>退出系统</span>
+                </li>
+            </ul>
+            <div class="logo">
+                <i class="logo-icon"></i>
+                <span class="logo-text"></span>
+            </div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active">
+                    <span>信息资源库</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>应用平台</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>基础平台</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>综合管理</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>健康扶贫</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>决策支持</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>公众服务</span>
+                    <div class="active-line"></div>
+                </li>
+                <li>
+                    <span>医疗大数据应用</span>
+                    <div class="active-line"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="item-wraper">
+                <div class="item item5">
+                    <i class="item-icon item-icon5"></i>
+                    <p>卫生资源数据库</p>
+                </div>
+                <div class="item item1">
+                    <i class="item-icon item-icon1"></i>
+                    <p>电子病历数据库</p>
+                </div>
+                <div class="center">
+                    <div class="item item2">
+                        <i class="item-icon item-icon2"></i>
+                        <span>全员人口数据库</span>
+                    </div>
+                    <div class="item item3">
+                        <i class="item-icon item-icon3"></i>
+                        <p>健康档案数据库</p>
+                    </div>
+                    <div class="item item4">
+                        <i class="item-icon item-icon4"></i>
+                        <p>健康扶贫数据库</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function() {
+            $('.nav ul li').on('click', function() {
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>

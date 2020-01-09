@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head> @include('./header.html', { "title": "入口页" }) </head>
+
+<body>
+    <div class="frame_content">
+        <div class="frame_l">
+            <div class="frame_l_part1">
+                <div class="frame_title">
+                    <i class="fc_header_icon1"></i>
+                    <span>医疗卫生资源</span>
+                    <div class="fc_header fc_header1"></div>
+                </div>
+                <div class="fl_con">
+                    <div class="barechart1" id="barEchart1"></div>
+                </div>
+            </div>
+            <div class="frame_l_part2">
+                <div class="frame_title">
+                    <i class="fc_header_icon2"></i>
+                    <span>2019年10月15日全市疾病TOP10</span>
+                    <div class="fc_header fc_header2"></div>
+                </div>
+                <div class="fl_con">
+                    <ul>
+                        <li>
+                            <div class="num num1"><span>1</span></div>
+                            <p>糖尿病</p>
+                            <div class="bar bar1 bar_w"></div>
+                            <span class="span1">10k</span>
+                        </li>
+                        <li>
+                            <div class="num num2"><span>2</span></div>
+                            <p>上呼吸道感染</p>
+                            <div class="bar bar2 bar_w"></div>
+                            <span class="span2">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num num3"><span>3</span></div>
+                            <p>妊娠状态</p>
+                            <div class="bar bar3 bar_w"></div>
+                            <span class="span3">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>4</span></div>
+                            <p>慢性胃炎</p>
+                            <div class="bar bar4 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>5</span></div>
+                            <p>高血压</p>
+                            <div class="bar bar5 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>6</span></div>
+                            <p>腹痛</p>
+                            <div class="bar bar6 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>7</span></div>
+                            <p>引导页</p>
+                            <div class="bar bar7 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>8</span></div>
+                            <p>病毒性肝炎</p>
+                            <div class="bar bar8 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>9</span></div>
+                            <p>关节炎</p>
+                            <div class="bar bar9 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>10</span></div>
+                            <p>胃炎</p>
+                            <div class="bar bar10 bar_w"></div>
+                            <span>9.4k</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="frame_l_part3">
+                <div class="frame_title">
+                    <i class="fc_header_icon3"></i>
+                    <span>健康档案</span>
+                    <div class="fc_header fc_header1"></div>
+                </div>
+                <div class="fl_con fn-clear">
+                    <div class="l">
+                        <div class="l_top">
+                            <img src="dist/img/total_img.png" alt="">
+                            <p>档案总数</p>
+                        </div>
+                        <p><em>56776</em>/件</p>
+                    </div>
+                    <div class="r" id="archivesechart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="frame_l frame_r ">
+            <div class="frame_r_part1">
+                <div class="frame_title">
+                    <i class="fc_header_icon4"></i>
+                    <span>二级以上医疗机构当日就诊人次TOP10</span>
+                    <div class="fc_header fc_header2"></div>
+                    <ul class="fc_btn fn-clear">
+                        <li class="fc_btn_action">门诊</li>
+                        <li>住院</li>
+                    </ul>
+                </div>
+                <div class="fr_con nicescroll_part1">
+                    <ul class="con_tab1">
+                        <li>
+                            <span class="num">1</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count count1">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">2</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count count2">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">3</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count count3">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">4</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">5</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">6</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">7</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="down_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">8</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">9</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">10</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                    </ul>
+                    <ul class="con_tab1" style="display: none;">
+                        <li>
+                            <span class="num">1</span>
+                            <p>平凉市人民医院...</p>
+                            <span class="count count1">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">2</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count count2">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">3</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count count3">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">4</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">5</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">6</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">7</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="down_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">8</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">9</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                        <li>
+                            <span class="num">10</span>
+                            <p>平凉市人民医院</p>
+                            <span class="count">10k</span>
+                            <div><span>2名</span><i class="up_icon"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="frame_l_part2 frame_r_part2">
+                <div class="frame_title fn-clear">
+                    <i class="fc_header_icon5"></i>
+                    <span>基层医疗机构就诊人次TOP10</span>
+                    <div class="fc_header fc_header2"></div>
+                    <ul class="fc_btn fn-clear">
+                        <li class="fc_btn_action">门诊</li>
+                        <li>住院</li>
+                    </ul>
+                </div>
+                <div class="fr_con fl_con">
+                    <ul>
+                        <li>
+                            <div class="num num1"><span>1</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar1"></div>
+                            <span class="span1">10k</span>
+                        </li>
+                        <li>
+                            <div class="num num2"><span>2</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar2"></div>
+                            <span class="span2">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num num3"><span>3</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar3"></div>
+                            <span class="span3">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>4</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar4"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>5</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar5"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>6</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar6"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>7</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar7"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>8</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar8"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>9</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar9"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>10</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar10"></div>
+                            <span>9.4k</span>
+                        </li>
+                    </ul>
+                    <ul style="display: none;">
+                        <li>
+                            <div class="num num1"><span>1</span></div>
+                            <p>平凉市人民医院..</p>
+                            <div class="bar bar1"></div>
+                            <span class="span1">10k</span>
+                        </li>
+                        <li>
+                            <div class="num num2"><span>2</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar2"></div>
+                            <span class="span2">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num num3"><span>3</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar3"></div>
+                            <span class="span3">9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>4</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar4"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>5</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar5"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>6</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar6"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>7</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar7"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>8</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar8"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>9</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar9"></div>
+                            <span>9.4k</span>
+                        </li>
+                        <li>
+                            <div class="num"><span>10</span></div>
+                            <p>平凉市人民医院</p>
+                            <div class="bar bar10"></div>
+                            <span>9.4k</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="frame_r_part3">
+                <div class="frame_title">
+                    <i class="fc_header_icon6"></i>
+                    <span>医保报销</span>
+                    <div class="fc_header fc_header1"></div>
+                </div>
+                <div class="fr_con nicescroll_part1">
+                    <table>
+                        <tr>
+                            <th>县/区</th>
+                            <th>医院报销费用</th>
+                            <th>报销比例</th>
+                            <th>贫困人口报销费用</th>
+                            <th>报销比例</th>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                        <tr>
+                            <td>平凉市</td>
+                            <td>658293.96</td>
+                            <td>73.13</td>
+                            <td>314558.88</td>
+                            <td>99.75</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dist/js/lib/jquery/jquery-1.11.3.min.js"></script>
+    <script src="dist/js/lib/echarts/echarts4.js"></script>
+    <script src="dist/js/lib/nicescroll/jquery.nicescroll.min.js"></script>
+    <script>
+        var clientWidth = document.documentElement.scrollWidth; //获取屏幕尺寸
+        var scale = clientWidth / 1920;
+        baroption1 = {
+            grid: {
+                top: "25%",
+                bottom: "10%"
+            },
+            xAxis: {
+                data: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                axisLine: {
+                    show: true //隐藏X轴轴线
+                },
+                axisTick: {
+                    show: false //隐藏X轴刻度
+                },
+                axisLabel: {
+                    show: true,
+                    margin: 4 * scale,
+                    textStyle: {
+                        color: "#fff", //X轴文字颜色
+                        fontSize: 12 * scale,
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#fff'
+                    }
+                },
+
+            },
+            yAxis: [{
+                type: "value",
+                name: "%/月",
+                nameTextStyle: {
+                    color: "#fff",
+                    fontSize: 12 * scale,
+                },
+                max: 100,
+                // min: 0,
+                splitNumber: 5,
+                axisTick: {
+                    show: false //隐藏X轴刻度
+                },
+                axisLabel: {
+                    show: true,
+                    textStyle: {
+                        color: "#fff", //X轴文字颜色
+                        fontSize: 12 * scale,
+                    }
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#3d4871'
+                    }
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#fff'
+                    }
+                },
+            }, ],
+            series: [{
+                name: "主营业务",
+                type: "bar",
+                barWidth: 15,
+                label: {
+                    normal: {
+                        show: true,
+                        position: 'top',
+                        formatter: "{c}K",
+                        textStyle: {
+                            fontFamily: 'reducto_reduce_ruiyan',
+                            fontSize: 12 * scale,
+                            color: '#ffdf1c', //color of value
+                        }
+                    }
+                },
+                itemStyle: {
+                    normal: {
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: "rgba(229,179,7,1)"
+                        }, {
+                            offset: 1,
+                            color: "rgba(229,179,7,0.2)"
+                        }])
+                    }
+                },
+                data: [10, 20, 10, 30, 10, 10, 10, 10, 10, 20, 10, 10]
+            }]
+        };
+        aroption1 = {
+            // 名字上的值要变化的话要使num和value值同时变
+            radar: {
+                indicator: [{
+                    name: '老年病档案',
+                    num: 4356,
+                }, {
+                    name: '高血压档案',
+                    num: 2555,
+                }, {
+                    name: '糖尿病档案',
+                    num: 1232,
+                }, {
+                    name: '孕产妇档案',
+                    num: 133,
+                }, {
+                    name: '儿童档案',
+                    num: 321,
+                }],
+                radius: '65%',
+                center: ['50%', '55%'],
+                splitNumber: 4,
+                axisLine: { //指向外圈文本的分隔线样式
+                    lineStyle: {
+                        color: '#225dcb'
+                    }
+                },
+                splitLine: {
+                    lineStyle: {
+                        color: ['#225dcb'],
+                        width: 2
+                    }
+                },
+                splitArea: {
+                    areaStyle: {
+                        color: ['transparent']
+                    }
+                },
+                nameGap: 5 * scale,
+                name: {
+                    formatter: function(value, indicator) {
+                        let text = '{yellow|' + indicator.num + '}\n{a|' + value + '}'
+                        return text
+                    },
+                    lineHeight: 20 * scale,
+                    rich: {
+                        a: {
+                            color: '#a9ddee',
+                            fontSize: 14 * scale,
+                            align: 'center'
+                        },
+                        yellow: {
+                            color: '#FFDC00',
+                            fontSize: 14,
+                            align: 'center',
+                            fontFamily: 'reducto_reduce_ruiyan'
+                        },
+                    }
+                },
+            },
+            series: [{
+                type: 'radar',
+                tooltip: {
+                    trigger: 'item'
+                },
+                symbol: 'none',
+                itemStyle: {
+                    normal: {
+                        color: '#65d7ec'
+                    }
+                },
+                label: {
+                    normal: {
+                        formatter: '{b}'
+                    }
+                },
+                areaStyle: {
+                    color: ['#3d83bb'],
+                    opacity: 0.4
+                },
+                data: [{
+                    value: [4356, 2555, 1232, 133, 321],
+                }]
+            }, ]
+        };
+        $(function() {
+            archivesechart
+            var myChart1 = echarts.init(document.getElementById('barEchart1'));
+            var myChart2 = echarts.init(document.getElementById('archivesechart'));
+            myChart1.setOption(baroption1)
+            myChart2.setOption(aroption1)
+            $(window).resize(function() {
+                myChart1.resize();
+                myChart2.resize();
+            })
+            $('.fc_btn li').click(function() {
+                $(this).addClass('fc_btn_action').siblings().removeClass('fc_btn_action');
+                $(this).parents('.frame_title').siblings().children('ul').eq($(this).index()).show().siblings().hide()
+            })
+            $(".nicescroll_part1").niceScroll({
+                touchbehavior: true, //是否是触摸式滚动效果
+                cursorcolor: "#9fceff", //滚动条的颜色值
+                cursorborderradius: "20px", // 滚动条圆角（像素）
+                cursoropacitymax: 0.6, //滚动条的透明度值
+                cursorwidth: 10 * scale, //滚动条的宽度值
+                background: "#07427e", //滚动条的背景色，默认是透明的
+                autohidemode: false, //滚动条是否是自动隐藏，默认值为 true
+            });
+        })
+    </script>
+</body>
+
+</html>

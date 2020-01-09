@@ -1,0 +1,752 @@
+/* 信息资源 */
+
+.XXZY-wraper {
+    min-height: 100vh;
+    background: #fff;
+    .head {
+        height: 2rem;
+        padding: 0 .5rem 0 .55rem;
+        background: url('../img/xxzy-head-bg.png') no-repeat center;
+        background-size: 100% 100%;
+        overflow: hidden;
+        i,
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .logo {
+            line-height: 2rem;
+            .logo-icon {
+                width: 1.375rem;
+                height: 1.075rem;
+                margin-right: .25rem;
+                background: url('../img/xxzy-head-logo.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .logo-text {
+                width: 7.7rem;
+                height: 1.175rem;
+                background: url('../img/xxzy-head-logo-text.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+        }
+        .hd-nav {
+            float: right;
+            line-height: 2rem;
+            font-size: 0;
+            li {
+                display: inline-block;
+                margin-left: .5rem;
+                font-size: .35rem;
+                color: #586b7c;
+                cursor: pointer;
+            }
+            .home-icon {
+                width: .4rem;
+                height: .325rem;
+                margin-right: .1rem;
+                background: url('../img/xxzy-head-home-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .introduce-icon {
+                width: .35rem;
+                height: .325rem;
+                margin-right: .1rem;
+                background: url('../img/xxzy-head-introduce-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .screen-icon {
+                width: .375rem;
+                height: .35rem;
+                margin-right: .1rem;
+                background: url('../img/xxzy-head-screen-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .password-icon {
+                width: .3rem;
+                height: .35rem;
+                margin-right: .1rem;
+                background: url('../img/xxzy-head-password-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .exit-icon {
+                width: .325rem;
+                height: .35rem;
+                margin-right: .1rem;
+                background: url('../img/xxzy-head-exit-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .nav {
+        height: 1.25rem;
+        padding: 0 0 0 1rem;
+        background: url('../img/xxzy-nav-bg.png') no-repeat center;
+        background-size: 100% 100%;
+        font-size: 0;
+        line-height: 1.25rem;
+        li {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            border-right: 1px solid #86ccff;
+            font-size: .45rem;
+            line-height: .45rem;
+            color: #fff;
+            padding: 0 0.65rem;
+            .active-line {
+                display: none;
+            }
+        }
+        li:last-child {
+            border-right: none;
+        }
+        li:hover {
+            font-weight: bold;
+            .active-line {
+                position: absolute;
+                left: 50%;
+                bottom: -0.2rem;
+                transform: translateX(-50%);
+                display: block;
+                width: .75rem;
+                height: 2px;
+                background: #fff;
+            }
+        }
+        .active {
+            font-weight: bold;
+            .active-line {
+                position: absolute;
+                left: 50%;
+                bottom: -0.2rem;
+                transform: translateX(-50%);
+                display: block;
+                width: .75rem;
+                height: 2px;
+                background: #fff;
+            }
+        }
+    }
+    .content {
+        position: absolute;
+        top: 3.25rem;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .item-wraper {
+        width: 28.65rem;
+        height: 11.65rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        .item {
+            text-align: center;
+            cursor: pointer;
+            .item-icon {
+                display: inline-block;
+                width: 2.975rem;
+                height: 2.975rem;
+            }
+            span,
+            p {
+                font-size: .6rem;
+                color: #fff;
+            }
+            .item-icon1 {
+                margin: 2.35rem auto 2.1rem auto;
+                background: url('../img/xxzy-item1-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .item-icon2 {
+                margin-right: 1rem;
+                background: url('../img/xxzy-item2-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .item-icon3 {
+                Align-content: Flex-start;
+                margin: .55rem auto .55rem auto;
+                background: url('../img/xxzy-item3-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .item-icon4 {
+                margin: .55rem auto .55rem auto;
+                background: url('../img/xxzy-item4-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .item-icon5 {
+                margin: 2.35rem auto 2.1rem auto;
+                background: url('../img/xxzy-item5-icon.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+        }
+        .center {
+            width: 14rem;
+            margin: 0 auto;
+        }
+        .item1 {
+            float: left;
+            width: 7rem;
+            height: 11.6rem;
+            background: url('../img/xxzy-item1-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .item2 {
+            /* width: 14.1rem; */
+            height: 5.6rem;
+            padding: 1.25rem 0 0 0;
+            margin-bottom: .35rem;
+            box-sizing: border-box;
+            background: url('../img/xxzy-item2-bg.png') no-repeat center;
+            background-size: 100% 100%;
+            i,
+            span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        .item3 {
+            float: left;
+            display: inline-block;
+            width: 6.85rem;
+            height: 5.6rem;
+            background: url('../img/xxzy-item3-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .item4 {
+            float: right;
+            display: inline-block;
+            width: 6.85rem;
+            height: 5.625rem;
+            background: url('../img/xxzy-item4-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .item5 {
+            float: right;
+            width: 7rem;
+            height: 11.6rem;
+            background: url('../img/xxzy-item5-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+
+/* 平凉市全民健康信息平台  首页*/
+
+.PLJK-wraper {
+    /* opacity: 0.5; */
+    min-height: 100vh;
+    padding: .35rem .5rem .35rem .5rem;
+    box-sizing: border-box;
+    .head {
+        position: relative;
+        z-index: 999;
+        height: 2.1rem;
+        padding-top: 0.5rem;
+        box-sizing: border-box;
+        background: url('../img/pljk-home-head-bg.png') no-repeat center;
+        background-size: 100% 100%;
+        text-align: center;
+        overflow: hidden;
+        .logo {
+            display: block;
+            width: 11.9rem;
+            height: .85rem;
+            margin: 0 auto;
+            background: url('../img/pljk-home-logo.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .head-right {
+            float: right;
+            margin-top: .7rem;
+            font-size: 0;
+            .right-btn {
+                display: inline-block;
+                width: 2.9rem;
+                height: .875rem;
+                line-height: .87rem;
+                margin-left: .2rem;
+                font-size: .45rem;
+                color: #fff;
+                background: url('../img/pljk-home-rightbtn-bg.png') no-repeat center;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+        }
+        .head-left {
+            float: left;
+            margin-top: .7rem;
+            font-size: 0;
+            .left-btn {
+                display: inline-block;
+                width: 2.9rem;
+                height: .875rem;
+                line-height: .87rem;
+                margin-right: 3.75rem;
+                font-size: .45rem;
+                color: #fff;
+                background: url('../img/pljk-home-leftbtn-bg.png') no-repeat center;
+                background-size: 100% 100%;
+                cursor: pointer;
+            }
+            .left-calendar {
+                display: inline-block;
+                width: 5.35rem;
+                height: .875rem;
+                padding-left: .4rem;
+                box-sizing: border-box;
+                line-height: .87rem;
+                background: url('../img/pljk-home-calendar-bg.png') no-repeat center;
+                background-size: 100% 100%;
+                cursor: pointer;
+                input {
+                    width: 100%;
+                    height: .875rem;
+                    background: url('../img/pljk-home-calendar-icon.png') no-repeat center;
+                    background-size: 9.6% 58%;
+                    background-position: 94% 40%;
+                    font-size: .5rem;
+                    color: #68d8fe;
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+        .head-right-light {
+            position: absolute;
+            top: .475rem;
+            left: 30.8rem;
+            i {
+                display: inline-block;
+            }
+            .head-light1 {
+                position: absolute;
+                width: 1.05rem;
+                height: .8rem;
+                background: url('../img/pljk-home-head-light1.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite;
+            }
+            .head-light2 {
+                position: absolute;
+                left: 0.55rem;
+                width: .95rem;
+                height: .675rem;
+                background: url('../img/pljk-home-head-light2.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 0.5s;
+            }
+            .head-light3 {
+                position: absolute;
+                left: 1.1rem;
+                width: .825rem;
+                height: .55rem;
+                background: url('../img/pljk-home-head-light3.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 1s;
+            }
+            .head-light4 {
+                position: absolute;
+                left: 1.6rem;
+                width: .725rem;
+                height: .475rem;
+                background: url('../img/pljk-home-head-light4.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 1.5s;
+            }
+            .head-light5 {
+                position: absolute;
+                left: 2.1rem;
+                width: .65rem;
+                height: .4rem;
+                background: url('../img/pljk-home-head-light5.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 2s;
+            }
+            .head-light6 {
+                position: absolute;
+                left: 2.55rem;
+                width: .6rem;
+                height: .35rem;
+                background: url('../img/pljk-home-head-light6.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 2.5s;
+            }
+            .head-light7 {
+                position: absolute;
+                left: 2.95rem;
+                width: .6rem;
+                height: .325rem;
+                background: url('../img/pljk-home-head-light7.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 3s;
+            }
+            .head-light8 {
+                position: absolute;
+                left: 3.45rem;
+                width: .575rem;
+                height: .3rem;
+                background: url('../img/pljk-home-head-light8.png') no-repeat center;
+                background-size: 100% 100%;
+                animation: headlight 3.5s linear infinite 3.5s;
+            }
+        }
+        .head-left-light {
+            position: absolute;
+            top: .475rem;
+            left: 16.1rem;
+            transform: rotateY(180deg);
+        }
+    }
+    .content {
+        position: relative;
+        margin-top: .5rem;
+        .content-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        .electrocardiogram {
+            position: absolute;
+            top: 0.45rem;
+            left: 11rem;
+            width: 14rem;
+            height: 4.7rem;
+            background: url('../img/pljk-electrocardiogram.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .heart-icon {
+            position: absolute;
+            top: -3rem;
+            left: 22.3rem;
+            width: 15.8rem;
+            height: 14.725rem;
+            background: url('../img/pljk-heart-bg.png') no-repeat center;
+            background-size: 100% 100%;
+        }
+        .center {
+            width: 20.625rem;
+            margin: 0 auto;
+        }
+        .block4 {
+            height: 14.5rem;
+            margin-bottom: .4rem;
+            background: url('../img/pljk-home-block4-bg.png') no-repeat center;
+            background-size: 100% 100%;
+            .map-wraper {
+                position: relative;
+                i {
+                    display: inline-block
+                }
+            }
+            .platform {
+                position: absolute;
+                z-index: 99;
+                top: 0.95rem;
+                left: 9.35rem;
+                font-size: .45rem;
+                color: #fff;
+                font-weight: bold;
+                .platform-icon {
+                    width: 2.175rem;
+                    height: 1.875rem;
+                    background: url('../img/pljk-home-block4-platform.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .platform-light {
+                    position: absolute;
+                    top: -0.4rem;
+                    left: -0.3rem;
+                    width: 2.9rem;
+                    height: 1.775rem;
+                    background: url('../img/pljk-home-block4-platformlight.png') no-repeat center;
+                    background-size: 100% 100%;
+                    animation: headlight 2s linear infinite;
+                }
+                p {
+                    position: relative;
+                    top: -0.1rem;
+                    line-height: .45rem;
+                    text-align: center;
+                }
+            }
+            .arrow-wraper {
+                position: absolute;
+                z-index: 99;
+                top: 3.2rem;
+                left: 9.9rem;
+            }
+            .arrow {
+                position: relative;
+                z-index: 98;
+                width: 1.075rem;
+                height: 1.075rem;
+                background: url('../img/arrow.gif') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .arrow-bg {
+                position: absolute;
+                top: -0.15rem;
+                left: -0.05rem;
+                z-index: 97;
+                width: 1.2rem;
+                height: 1.2rem;
+                background: url('../img/arrow-bg.png') no-repeat center;
+                background-size: 100% 100%;
+            }
+            .city-center {
+                position: absolute;
+                z-index: 99;
+                top: 4.5rem;
+                left: 9.4rem;
+                font-size: .45rem;
+                color: #fff;
+                font-weight: bold;
+                p {
+                    line-height: .45rem;
+                    margin-top: -0.1rem;
+                    text-align: center;
+                }
+                .base {
+                    position: relative;
+                    z-index: 90;
+                    width: 1.95rem;
+                    height: .75rem;
+                    margin-top: 0.1rem;
+                    background: url('../img/pljk-home-block4-base.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .star {
+                    position: absolute;
+                    z-index: 95;
+                    left: 30%;
+                    width: .725rem;
+                    height: .7rem;
+                    background: url('../img/pljk-home-block4-star.png') no-repeat center;
+                    background-size: 100% 100%;
+                    animation: headlight 2s linear infinite;
+                }
+                .light {
+                    position: absolute;
+                    z-index: 90;
+                    left: 8%;
+                    top: -0.6rem;
+                    width: 1.8rem;
+                    height: 1.8rem;
+                    background: url('../img/pljk-home-block4-baselight.png') no-repeat center;
+                    background-size: 100% 100%;
+                    /* animation: headlight 2s linear infinite; */
+                }
+            }
+            #pl_map {
+                height: 10.3rem;
+                z-index: 95;
+                /* background: red; */
+            }
+            .show-data {
+                padding: 0 .5rem;
+            }
+            .institution-data {
+                position: relative;
+            }
+            .institution-data-top {
+                margin-bottom: 0.225rem;
+            }
+            .show-data-left {
+                float: left;
+                .institution-name {
+                    position: relative;
+                    display: inline-block;
+                    background: url('../img/pljk-home-block4-hexagon.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .institution-num {
+                    position: absolute;
+                    left: 0.85rem;
+                    top: 0.2rem;
+                    padding: 0 0.7rem 0 0;
+                    box-sizing: border-box;
+                    background: url('../img/pljk-home-block4-itembgl.png') no-repeat center;
+                    background-size: 100% 100%;
+                    text-align: right;
+                }
+                .unit {
+                    position: absolute;
+                    left: 4.7rem;
+                    top: 1.05rem;
+                }
+            }
+            .show-data-right {
+                float: right;
+                .institution-name {
+                    position: relative;
+                    display: inline-block;
+                    background: url('../img/pljk-home-block4-hexagon.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .institution-num {
+                    position: absolute;
+                    left: -2.75rem;
+                    top: 0.2rem;
+                    padding: 0 0 0 0.7rem;
+                    box-sizing: border-box;
+                    background: url('../img/pljk-home-block4-itembgr.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+                .unit {
+                    position: absolute;
+                    left: -3rem;
+                    top: 1.05rem;
+                }
+            }
+            .institution-name {
+                position: relative;
+                display: inline-block;
+                width: 2rem;
+                height: 1.7rem;
+                line-height: 1.7rem;
+                font-size: .3rem;
+                color: #fff;
+                text-align: center;
+                z-index: 50;
+                span {
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 0.6rem;
+                    transform: scale(0.85, 0.85);
+                }
+            }
+            .institution-num {
+                display: inline-block;
+                width: 3.95rem;
+                height: 1.275rem;
+                box-sizing: border-box;
+                line-height: 1.2rem;
+                font-size: .75rem;
+                font-family: 'reducto_reduce_ruiyan';
+                color: #00fcf9;
+                z-index: 48;
+            }
+            .unit {
+                font-size: .35rem;
+                color: #00fcf9;
+            }
+            .counting-cards {
+                width: 9rem;
+                margin: 0 auto;
+            }
+            .count-tit {
+                text-align: center;
+                p {
+                    font-size: .6rem;
+                    color: #fff;
+                }
+                .tit-line {
+                    width: 6.575rem;
+                    height: .225rem;
+                    margin: 0 auto;
+                    background: url('../img/pljk-home-block4-titlelight.png') no-repeat center;
+                    background-size: 100% 100%;
+                }
+            }
+            .count-num {
+                position: relative;
+                margin-top: .35rem;
+                text-align: center;
+            }
+            .count-item {
+                display: inline-block;
+                vertical-align: bottom;
+                width: 1.15rem;
+                height: 1.85rem;
+                line-height: 1.85rem;
+                margin-right: .45rem;
+                background: url('../img/pljk-home-block4-numbg.png') no-repeat center;
+                background-size: 100% 100%;
+                em {
+                    font-size: 1.35rem;
+                    font-family: 'reducto_reduce_ruiyan';
+                    color: #f6ff00;
+                }
+            }
+            .count-unit {
+                position: absolute;
+                bottom: -0.1rem;
+                right: 0.9rem;
+                display: inline-block;
+                vertical-align: bottom;
+                font-size: .35rem;
+                line-height: .35rem;
+                color: #00fcf9;
+            }
+        }
+        .block5 {
+            height: 8.725rem;
+            background: url('../img/pljk-home-block5-bg.png') no-repeat center;
+            background-size: 100% 100%;
+            .show-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: .5rem 0 0 0;
+                li {
+                    width: 16.6%;
+                }
+                .top-item {
+                    margin-bottom: .4rem;
+                }
+            }
+            .circle {
+                width: 2.45rem;
+                height: 2.45rem;
+                margin: 0 auto;
+                background: url('../img/pljk-home-block5-circlebg.png') no-repeat center;
+                background-size: 100% 100%;
+                text-align: center;
+                em {
+                    display: inline-block;
+                    margin-top: .75rem;
+                    font-size: .625rem;
+                    line-height: .625rem;
+                    color: #00f0ff;
+                    font-family: 'reducto_reduce_ruiyan';
+                }
+                p {
+                    margin-top: .05rem;
+                    font-size: .4rem;
+                    color: #00f0ff;
+                }
+            }
+            .item-tit {
+                margin-top: .2rem;
+                font-size: .35rem;
+                color: #9fceff;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.frame_title {
+    .fc_header_icon7 {
+        width: .375rem;
+        height: .425rem;
+        background: url('../img/fc_header_icon7.png') no-repeat center;
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes headlight {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
