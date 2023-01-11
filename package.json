@@ -70,7 +70,7 @@
     "imagemin": "^3.2.0",
     "imagemin-pngquant": "^4.2.0",
     "lodash": "^4.14.1",
-    "ms": "^0.7.1",
+    "ms": "^2.0.0",
     "postcss-display-inline-block": "^1.0.0",
     "postcss-easysprites": "^0.1.7",
     "postcss-modules": "^0.5.0",
